@@ -234,52 +234,9 @@ customFile (class)
 
 Well, this one might be a bit tricky, because from my last updates, a structure of such a JSON file has been changed. So, let's go right into it!
 
-Menu style JSON file
+Structure of a menu style JSON file is presented in "menu1.json"
 
-Structure of this JSON file looks like this:
-{
-	"document_type": "NPYUI-Style",
-	"document_body": {
-		"style_body": {
-			"theme": {
-				"accent_color": "Green",
-				"bordering_style": "White",
-				"normal_style": "Gray"
-			},
-
-			"margins": {
-				"xpos": 2,
-				"ypos": 2
-			}
-		}
-	}
-}
-
-And structure of a JSON sprite is looking like this:
-
-	{
-	"manifest": "sprite",
-	"model": {
-		"namespace": "fx/subaru/",
-		"margins": [
-			5,
-			10
-		],
-		"layers": [
-			{
-				"type": "file",
-				"source": "mdl1.txt",
-				"color": "Cyan",
-			},
-			{
-				"type": "file",
-				"source": "mdl2.txt",
-				"color": "Gray",
-			}
-		]
-	}
-}
-
+And structure of a JSON sprite is presented in "sprite1.json"
 Now, this structure might be a bit tricky, actually I mean, type. There are two types - "file" and "text".
 
 # Summary
