@@ -1,0 +1,17 @@
+{
+	"document_type": "NPYUI-Style",
+	"document_body": {
+		"style_body": {
+			"theme": {
+				"accent_color": "Green",
+				"bordering_style": "White",
+				"normal_style": "Gray"
+			},
+
+			"margins": {
+				"xpos": 2,
+				"ypos": 2
+			}
+		}
+	}
+}
