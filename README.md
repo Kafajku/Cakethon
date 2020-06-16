@@ -237,78 +237,47 @@ Well, this one might be a bit tricky, because from my last updates, a structure 
 Menu style JSON file
 
 Structure of this JSON file looks like this:
-
 {
+	"document_type": "NPYUI-Style",
+	"document_body": {
+		"style_body": {
+			"theme": {
+				"accent_color": "Green",
+				"bordering_style": "White",
+				"normal_style": "Gray"
+			},
 
-"document\_type": "NPYUI-Style",
-
-"document\_body": {
-
-	"style\_body": {
-
-		"theme": {
-"accent_color": "Green",
-
-"bordering_style": "White",
-
-"normal_style": "Gray"
-
-		},
-
-
-		"margins": {
-"xpos": 2,
-
-"ypos": 2
-
+			"margins": {
+				"xpos": 2,
+				"ypos": 2
+			}
 		}
-
 	}
-
-}
 }
 
 And structure of a JSON sprite is looking like this:
 
-{
-
-"manifest": "sprite",
-
-"model": {
-
-	"namespace": "fx/subaru/",
-
-	"margins": \[
-
-		5,
-
-		10
-
-	\],
-
-	"layers": \[
-
-		{
-"type": "file",
-
-"source": "mdl1.txt",
-
-"color": "Cyan",
-
-		},
-
-		{
-"type": "file",
-
-"source": "mdl2.txt",
-
-"color": "Gray",
-
-		}
-
-	\]
-
-}
+	{
+	"manifest": "sprite",
+	"model": {
+		"namespace": "fx/subaru/",
+		"margins": [
+			5,
+			10
+		],
+		"layers": [
+			{
+				"type": "file",
+				"source": "mdl1.txt",
+				"color": "Cyan",
+			},
+			{
+				"type": "file",
+				"source": "mdl2.txt",
+				"color": "Gray",
+			}
+		]
+	}
 }
 
 Now, this structure might be a bit tricky, actually I mean, type. There are two types - "file" and "text".
