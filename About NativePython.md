@@ -6,7 +6,7 @@ About six months ago I've decided to create an open source, light module to use 
 
 List of topics touched by me here (on the bottom):
 
-1. Policy of mine
+1. License
 
 2. Downloading the module
 
@@ -20,15 +20,13 @@ List of topics touched by me here (on the bottom):
 
 7. Summary
 
-# Policy of mine
+# License
 
-Since it is on open source, you can edit it and share your own modified version of NativePython with users. But I wanted to strict out one thing.
-g
-Now, you might be a bit confused, because I have told you, that i share my work on open source license, which means exactly, that you can modify my project and publish your own, modified version. But I wanted to make sure, you do respect my work, so please, include me as a part of credits.
+This project is officially licensed under GNU General Public License v3.0. To see full rights of GNU General Public License v3.0, read file "License.md".
 
 # Downloading the module
 
-After you, hopefully, understand my policy, we can move on this thing and finally - download NativePython. So, go ahead and do it!
+After you, hopefully, understand how this project works, we can move on this thing and finally - download NativePython. So, go ahead and do it!
 
 # Helping me in NativePython improvements
 
