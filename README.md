@@ -42,13 +42,13 @@ Since NativePython uses different modules around, to actually make itself functi
 
 How to do this? Well, what you wanna do, is go to your CMD and execute following commands, to install all necessary modules:
 
-pip install pywin32
+```pip install pywin32
 
 pip install keyboard
 
 pip install python-varname
 
-pip install requests
+pip install requests```
 
 Notice one more thing - I've built NativePython on Python 3.8, so if you're using older versions of Python, these modules might not be available/work correctly for you.
 
