@@ -1,6 +1,6 @@
 # Introduction
 
-About six months ago I've decided to create an open source, light module to use in Python. This is, how it ended. I wanted to share my work - NativePython.
+About six months ago I've decided to create an open source, light module to use in Python. This is, how it ended. I wanted to share my work - Cakethon.
 
 # Topics
 
@@ -26,11 +26,11 @@ This project is officially licensed under GNU General Public License v3.0. To se
 
 # Downloading the module
 
-After you, hopefully, understand how this project works, we can move on this thing and finally - download NativePython. So, go ahead and do it!
+After you, hopefully, understand how this project works, we can move on this thing and finally - download Cakethon. So, go ahead and do it!
 
 # Helping me in NativePython improvements
 
-Also, as a part of NativePython community, you can give me your own suggestions to improve official version of NativePython.
+Also, as a part of Cakethon community, you can give me your own suggestions to improve official version of Cakethon.
 
 # A guide to using module
 
@@ -38,7 +38,7 @@ Okay, that was the hardest part for me, because I had to make a complete list of
 
 ## Before the guide
 
-Since NativePython uses different modules around, to actually make itself functional, I just wanted to say, that some of these modules are not automatically available for Python - you have to install them manually.
+Since Cakethon uses different modules around, to actually make itself functional, I just wanted to say, that some of these modules are not automatically available for Python - you have to install them manually.
 
 How to do this? Well, what you wanna do, is go to your CMD and execute following commands, to install all necessary modules:
 ```
@@ -52,7 +52,7 @@ pip install python-varname
 pip install requests
 ```
 
-Notice one more thing - I've built NativePython on Python 3.8, so if you're using older versions of Python, these modules might not be available/work correctly for you.
+Notice one more thing - I've built Cakethon on Python 3.8, so if you're using older versions of Python, these modules might not be available/work correctly for you.
 
 ## The right guide
 
@@ -275,4 +275,4 @@ Now, this structure has a simple feature - type. There are two types - "file" an
 
 # Summary
 
-Thank you for reading this whole document, I hope. I also hope, that you will enjoy using NativePython. I'm really happy, to finally share my work after 6 months of making it. Well, welcome to the community of NativePython!
+Thank you for reading this whole document, I hope. I also hope, that you will enjoy using Cakethon. I'm really happy, to finally share my work after 6 months of making it. Well, welcome to the community of Cakethon!
