@@ -255,10 +255,10 @@ caption.create(["Multi", "lined", "text"], 5, 5) #Multi lined
 
 ###### Output:
 
-*Single lined text*
-*Multi*
-*lined*
-*text*
+- *Single lined text*
+- *Multi*
+- *lined*
+- *text*
 
 # How to create JSON sprites and menu styles
 
