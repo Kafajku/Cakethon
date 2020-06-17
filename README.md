@@ -241,7 +241,9 @@ Well, this one might be a bit tricky, because from my last updates, a structure 
 Structure of a menu style JSON file is presented in "menu1.json"
 
 And structure of a JSON sprite is presented in "sprite1.json"
-Now, this structure might be a bit tricky, actually I mean, type. There are two types - "file" and "text".
+Now, this structure has a simple feature - type. There are two types - "file" and "text".
+"file" type is for *.txt* files and other text documents.
+"text" type is for lists and strings, like this: `["Multi", "lined", "sprite"]` or: `"Single lined text"`. Also, you can use lists in `caption.create()` function, because `text` argument can also be a list, not only a string.
 
 # Summary
 
