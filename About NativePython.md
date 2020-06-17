@@ -250,15 +250,19 @@ I guess, that the only function, that I've got to describe is `create()` from cl
 
 ```
 caption.create("Single lined text", 5, 5) #Single lined
-caption.create(["Multi", "lined", "text"], 5, 5) #Multi lined
+caption.create("", 5, 6) #A simple space between texts
+caption.create(["Multi", "lined", "text"], 5, 7) #Multi lined
 ```
 
 ###### Output:
 
-- *Single lined text*
-- *Multi*
-- *lined*
-- *text*
+```
+Single lined text
+
+Multi
+lined
+text
+```
 
 # How to create JSON sprites and menu styles
 
