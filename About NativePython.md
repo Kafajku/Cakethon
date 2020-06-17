@@ -14,9 +14,11 @@ List of topics touched by me here (on the bottom):
 
 4. A guide to using module
 
-5. How to create JSON sprites and menu styles
+5. Some comments about classes and functions
 
-6. Summary
+6. How to create JSON sprites and menu styles
+
+7. Summary
 
 # Policy of mine
 
@@ -234,6 +236,30 @@ All functions:
 
 ] `getFromURL(url)` - requesting reading files from given url; also, returns two values - name of the requested file and automatically encoded value of it.
 
+# Some comments about classes and functions
+
+## Classes
+
+Actually, there are some things I've gotta tell about classes and functions inside NativePython module. For first, let's tell, that classes like `createTimer` (classes with `create` keyword) are used to make instances, unlike classes such as `caption`, also, in case of class `caption`, it has it's own, default instance, others, are just classes to normal use.
+
+## Functions
+
+I guess, that the only function, that I've got to describe is `create()` from class `caption`. Why? Hmmm... in this function, you can also use lists to place multi lined text. It looks like this:
+
+###### Syntax:
+
+```
+caption.create("Single lined text", 5, 5) #Single lined
+caption.create(["Multi", "lined", "text"], 5, 5) #Multi lined
+```
+
+###### Output:
+
+*Single lined text*
+*Multi*
+*lined*
+*text*
+
 # How to create JSON sprites and menu styles
 
 Well, this one might be a bit tricky, because from my last updates, a structure of such a JSON file has been changed. So, let's go right into it!
@@ -243,7 +269,7 @@ Structure of a menu style JSON file is presented in "menu1.json"
 And structure of a JSON sprite is presented in "sprite1.json"
 Now, this structure has a simple feature - type. There are two types - "file" and "text".
 "file" type is for *.txt* files and other text documents.
-"text" type is for lists and strings, like this: `["Multi", "lined", "sprite"]` or: `"Single lined text"`. Also, you can use lists in `caption.create()` function, because `text` argument can also be a list, not only a string.
+"text" type is for lists and strings, like this: `["Multi", "lined", "sprite"]` or: `"Single lined text"`.
 
 # Summary
 
