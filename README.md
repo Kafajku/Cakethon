@@ -20,7 +20,7 @@ List of topics touched by me here (on the bottom):
 
 # Policy of mine
 
-Since it is on open source, you can edit it and share your own modified version of NativePython with users. But I wanted to strict out one thing - sharing.
+Since it is on open source, you can edit it and share your own modified version of NativePython with users. But I wanted to strict out one thing.
 g
 Now, you might be a bit confused, because I have told you, that i share my work on open source license, which means exactly, that you can modify my project and publish your own, modified version. But I wanted to make sure, you do respect my work, so please, include me as a part of credits.
 
