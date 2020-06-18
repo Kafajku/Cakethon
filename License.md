@@ -32,4 +32,4 @@ As you read your "Can" list, now, we must come to "Cannot" list:
 - User cannot distribute Cakethon as "second author".
 
 ###### Copyright © Cakethon since 2020 by Kazafka - All rights reserved.
-###### Copyright © Cakethon's JFPU License 1.0 by Kazafka- All rights reserved.
+###### Copyright © Cakethon's JFPU License 1.0 since 2020 by Kazafka- All rights reserved.
