@@ -20,6 +20,8 @@ of your profit is for you.
 - User can modify the Cakethon for his own needs.
 - User can share project as original author's work.
 - User can help in improving Cakethon.
+- User can use Cakethon for education purpose.
+- User can use the project for online stuff.
 
 ## "Cannot" list
 
@@ -30,6 +32,9 @@ As you read your "Can" list, now, we must come to "Cannot" list:
 - User cannot use same namespace for his project on GitHub (Cakethon).
 - User cannot claim rights for Cakethon.
 - User cannot distribute Cakethon as "second author".
+- User cannot use Cakethon for vulgar things.
+- User cannot use Cakethon for hate purpose.
+- User cannot use project for cheating stuff.
 
 # License uses
 
