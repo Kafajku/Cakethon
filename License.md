@@ -11,7 +11,19 @@ The full rights of user are written in the next topic.
 
 # Rights of the user
 
+## "Can" list
+
 Here, are the full list of things, that user can do with Cakethon:
 - User can download Cakethon.
 - User can make profit of his project, which is using Cakethon; further, user don't have to give 50% of profit to the Cakethon - 100%
 of your profit is for you.
+- User can modify the Cakethon for his own needs.
+- User can share project as original author's work.
+- User can help in improving Cakethon.
+
+## "Cannot" list
+
+As you read your "Can" list, now, we must come to "Cannot" list:
+- User cannot make profit directly of Cakethon.
+- User cannot modify Cakethon and publish modified version.
+- User cannot share project as his own creation.
