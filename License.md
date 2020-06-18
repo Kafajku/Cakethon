@@ -1,6 +1,6 @@
 # Cakethon's license
 
-Cakethon's license is just as simple, as it could ever be, in this case, I call it: **JPFU License 1.0**
+Cakethon's license is just as simple, as it could ever be, in this case, I call it: **JFPU License 1.0**
 
 # Cakethon's JFPU License 1.0
 
@@ -27,3 +27,9 @@ As you read your "Can" list, now, we must come to "Cannot" list:
 - User cannot make profit directly of Cakethon.
 - User cannot modify Cakethon and publish modified version.
 - User cannot share project as his own creation.
+- User cannot use same namespace for his project on GitHub (Cakethon).
+- User cannot claim rights for Cakethon.
+- User cannot distribute Cakethon as "second author".
+
+###### Copyright © Cakethon since 2020 by Kazafka - All rights reserved.
+###### Copyright © Cakethon's JFPU License 1.0 by Kazafka- All rights reserved.
