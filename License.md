@@ -33,7 +33,9 @@ As you read your "Can" list, now, we must come to "Cannot" list:
 
 # License uses
 
-What about using my license? If you want to have same rights, as I have (with **JFPU License 1.0**), simply, copy all text from this file, changing *Cakethon* namespace to some other (> User cannot use same namespace for his project on GitHub (Cakethon). <)
+What about using my license? If you want to have same rights, as I have (with **JFPU License 1.0**), simply, copy all text from this file, changing *Cakethon* namespace to some other ("User cannot use same namespace for his project on GitHub (Cakethon)."). Also
+you wanna to write your own copyright, so it's clear, of course, don't forget to copy: __Copyright © JFPU License 1.0 since 2020 by
+Kazafka - All rights reserved__.
 
 ###### Copyright © Cakethon since 2020 by Kazafka - All rights reserved.
 ###### Copyright © JFPU License 1.0 since 2020 by Kazafka- All rights reserved.
