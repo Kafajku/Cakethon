@@ -37,5 +37,5 @@ What about using my license? If you want to have same rights, as I have (with **
 you wanna to write your own copyright, so it's clear, of course, don't forget to copy: __Copyright © JFPU License 1.0 since 2020 by
 Kazafka - All rights reserved__.
 
-###### Copyright © Cakethon since 2020 by Kazafka - All rights reserved.
-###### Copyright © JFPU License 1.0 since 2020 by Kazafka- All rights reserved.
+###### Copyright © Cakethon since 2020 by Kafajku - All rights reserved.
+###### Copyright © JFPU License 1.0 since 2020 by Kafajku- All rights reserved.
