@@ -4,42 +4,26 @@ Cakethon's license is just as simple, as it could ever be, in this case, I call 
 
 # Cakethon's JFPU License 1.0
 
-What does actually JFPU means? Simply: **Just For Private Use**.
-So the full name is - **Just For Private Use License 1.0**.
-This license means, that user can use Cakethon just for private needs.
-The full rights of user are written in the next topic.
+What does actually JFPU means? Simply: **Just For Private Use**. So the full name is - **Just For Private Use License 1.0**.
+This license simply implies, that user can do everything he want, but for private use. So, you can e.g. modify Cakethon a little bit,
+but keep it private. What user (for example) cannot do, is shown in the list of "Stricts of license" section.
 
-# Rights of the user
+# Stricts of the license
 
-## "Can" list
+In here, you can see, what for example you cannot do with the Cakethon, which is automatically implied with the JFPU License 1.0.
 
-Here, are the full list of things, that user can do with Cakethon:
-- User can download Cakethon.
-- User can make profit of his project, which is using Cakethon; further, user don't have to give 50% of profit to the Cakethon - 100%
-of your profit is for you.
-- User can modify the Cakethon for his own needs.
-- User can share project as original author's work.
-- User can help in improving Cakethon.
-- User can use Cakethon for education purpose.
-- User can use the project for online stuff.
+## The list with (example) stricts
 
-## "Cannot" list
-
-As you read your "Can" list, now, we must come to "Cannot" list:
 - User cannot make profit directly of Cakethon.
 - User cannot modify Cakethon and publish modified version.
 - User cannot share project as his own creation.
 - User cannot use same namespace for his project on GitHub (Cakethon).
 - User cannot claim rights for Cakethon.
 - User cannot distribute Cakethon as "second author".
-- User cannot use Cakethon for vulgar things.
-- User cannot use Cakethon for hate purpose.
-- User cannot use project for cheating stuff.
 
 # License uses
 
-What about using my license? If you want to have same rights, as I have (with JFPU License 1.0), simply, copy "Can" list and "Cannot" list + put some info about JFPU License 1.0. Also you wanna to write your own copyright, so it's clear, of course, don't forget to
-copy: **Copyright © JFPU License 1.0 since 2020 by Kazafka - All rights reserved**.
+If you want to use JFPU License 1.0, simply, make a "License.md" file in your repository and copy the implies of JFPU License 1.0 and one of the bottom text (the second one, of course).
 
 ###### Copyright © Cakethon since 2020 by Kafajku - All rights reserved.
 ###### Copyright © JFPU License 1.0 since 2020 by Kafajku- All rights reserved.
