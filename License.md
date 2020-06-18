@@ -6,7 +6,7 @@ Cakethon's license is just as simple, as it could ever be, in this case, I call 
 
 What does actually JFPU means? Simply: **Just For Private Use**. So the full name is - **Just For Private Use License 1.0**.
 This license simply implies, that user can do everything he want, but for private use. So, you can e.g. modify Cakethon a little bit,
-but keep it private. What user (for example) cannot do, is shown in the list of "Stricts of license" section.
+but keep it private. What user (for example) cannot do, is shown in the list of "Stricts of the license" section.
 
 # Stricts of the license
 
