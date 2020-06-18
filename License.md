@@ -4,8 +4,8 @@ Cakethon's license is just as simple, as it could ever be, in this case, I call 
 
 # Cakethon's JFPU License 1.0
 
-What does actually JFPU means? Simply: Just For Private Use.
-So the full name is - Just For Private Use License 1.0.
+What does actually JFPU means? Simply: **Just For Private Use**.
+So the full name is - **Just For Private Use License 1.0**.
 This license means, that user can use Cakethon just for private needs.
 The full rights of user are written in the next topic.
 
@@ -31,5 +31,9 @@ As you read your "Can" list, now, we must come to "Cannot" list:
 - User cannot claim rights for Cakethon.
 - User cannot distribute Cakethon as "second author".
 
+# License uses
+
+What about using my license? If you want to have same rights, as I have (with **JFPU License 1.0**), simply, copy all text from this file, changing *Cakethon* namespace to some other (> User cannot use same namespace for his project on GitHub (Cakethon). <)
+
 ###### Copyright © Cakethon since 2020 by Kazafka - All rights reserved.
-###### Copyright © Cakethon's JFPU License 1.0 since 2020 by Kazafka- All rights reserved.
+###### Copyright © JFPU License 1.0 since 2020 by Kazafka- All rights reserved.
