@@ -276,3 +276,5 @@ Now, this structure has a simple feature - type. There are two types - "file" an
 # Summary
 
 Thank you for reading this whole document, I hope. I also hope, that you will enjoy using Cakethon. I'm really happy, to finally share my work after 6 months of making it. Well, welcome to the community of Cakethon!
+
+###### Copyright © Cakethon since 2020 by Kafajku - All rights reserved.
