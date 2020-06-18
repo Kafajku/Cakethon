@@ -22,7 +22,7 @@ List of topics touched by me here (on the bottom):
 
 # License
 
-This project is officially licensed under GNU General Public License v3.0. To see full rights of GNU General Public License v3.0, read file "License.md".
+This project is officially licensed under JFPU License 1.0. To see more info, read file "License.md".
 
 # Downloading the module
 
