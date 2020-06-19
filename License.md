@@ -1,4 +1,4 @@
-                                                      #JFPU License 1.1
+                                                      JFPU License 1.1
 
 Just For Private Use License 1.1; shortand - jfpu-1.1.
 **jfpu-1.1** implies, that all programs, which are using it *can only be used for private purpose*.
