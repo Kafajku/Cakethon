@@ -5,10 +5,10 @@ Just For Private Use License 1.1; shortand - jfpu-1.1.
 For example, a program's licensed under jfpu-1.1 source code can be modified.
 But, the same program's modified source code cannot be published.
 The list of *example* things that user cannot do with program licensed under jfpu-1.1:
-- User cannot distribute program
-- User cannot share modified program's source code
-- User cannot make profit of program (directly)
-- User cannot call himself as "another author" of program
+- User cannot distribute program.
+- User cannot share modified program's source code.
+- User cannot make profit of program (directly).
+- User cannot call himself as "another author" of program.
 ...etc.
 Thank you for reading this documentation.
 
