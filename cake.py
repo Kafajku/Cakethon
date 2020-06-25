@@ -13,7 +13,6 @@ import os
 # pip install keyboard
 # pip install python-varname
 # pip install requests
-#Notice, that this module was built on experimental (beta) version of Python.
 import sys
 import datetime
 import win32gui
@@ -27,6 +26,7 @@ from varname import nameof
 import getpass
 import base64
 import requests
+import importlib
 
 
 ##
@@ -597,3 +597,24 @@ class customFile:
         name, image = customFile.encode(path + name)
         os.remove(path + name)
         return name, image
+
+
+##
+## Exports (using functions from different modules)
+##
+
+class exports:
+    def call(module, variable, args):
+        name = module
+        module = sys.modules[module]
+        val = importlib.import_module(name)
+        del module
+        return val
+
+
+    def retrive(module, variable):
+        name = module
+        module = importlib.import_module(name)
+        val = getattr(module, variable)
+        del module
+        return val
