@@ -234,6 +234,14 @@ All functions:
 
 ] `getFromURL(url)` - requesting reading files from given url; also, returns two values - name of the requested file and automatically encoded value of it.
 
+###### Exports (using functions from different modules)
+
+`exports` (class)
+
+] `call(module, variable, args)` - returns the value of given function from a module; args must be a list (later unpacked to single arguments).
+
+] `retrive(module, variable)` - returns value of specified variable, which is in the module.
+
 # Some comments about classes and functions
 
 ## Classes
@@ -260,6 +268,20 @@ Single lined text
 Multi
 lined
 text
+```
+
+## Arguments
+
+Another thing, which I forgot to mention in this section, that probably all `args` arguments of functions, must be `lists`. Those lists, will be later unpacked, to the actual arguments of a function.
+
+###### Example:
+
+```
+def exampleFunction(arg1, arg2):
+  print(arg1 + ", " + arg2)
+  
+newmenu = cake.ui.createMenu("example.json", "Example menu", "")
+ui.createButton(newmenu, "Example button", exampleFunction, ["value1", "value2"])
 ```
 
 # How to create JSON sprites and menu styles
