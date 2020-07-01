@@ -1,4 +1,10 @@
-                                                                      Cakethon 1.91
+                                                                Cakethon 1.91
+## Changelog
+###### cake.py 1.28 - added `customFile` class;
+###### cake.py 1.30 - added `exports` class;
+###### cake.py 1.85 - deleted whole `ui` class;
+###### cake.py 1.91 - added `layout` class and supported `.json` files;
+
 # Introduction
 
 About six months ago I've decided to create an open source, light module to use in Python. This is, how it ended. I wanted to share my work - Cakethon.
@@ -179,26 +185,6 @@ All functions:
 
 ] `cls(self)` - deletes all the captions created with caption class.
 
-###### Menus
-
-`ui` (class)
-
-] `ui.button`
-
-] `ui.listsel`
-
-] `ui.check`
-
-] `createMenu(self, filename, title, dsc)` (class) - creates a menu from a filename, which is JSON file style path.
-
-]] `refresh(self)` - refreshes menu (put within while loop).
-
-] `createButton(menu, caption, handler, args)` - creates a button with given caption, sets it's handler, also, arguments.
-
-] `createCheck(menu, caption, handler, boolean)` - makes a list checkbox, with caption, handler and default boolean.
-
-] `createListSel(menu, caption, handler, llist, index)` - this function is creating a list selector, with set caption, handler, base list and default index.
-
 ###### JSON models (sprites)
 
 `jsonModel(self, path)` (class) - generates a model with given JSON file (path).
@@ -243,6 +229,34 @@ All functions:
 
 ] `retrive(module, variable)` - returns value of specified variable, which is in the module.
 
+###### Layouts
+
+`layout` (class)
+
+] `addItem(item)` - adds item to the layout (use only if you make layout directly in your Python file).
+
+] `text(self, x, y, text, color)` (class) - creates a new text element (use only if you make layout directly in your Python file).
+
+] ] `setX(self, x)` - sets position on X axis.
+
+] ] `setY(self, y)` - changes position on Y axis.
+
+] ] `setText(self, text)` - makes the text of element change.
+
+] ] `setColor(self, color)` - tells the element to use other color.
+
+] `clickable(self, x, y, text, color)` (class) - generates a new so called "clickable" element (use only if you make layout directly in your Python file).
+
+] ] `setX(self, x)` - sets position on X axis.
+
+] ] `setY(self, y)` - changes position on Y axis.
+
+] ] `setText(self, text)` - makes the text of element change.
+
+] ] `setColor(self, color)` - tells the element to use other color.
+
+] ] `setOnClick(method)` - changes the whole function, which will be called after the button's pressed (use always, even, if you are making layout via `.json` file).
+
 # Some comments about classes and functions
 
 ## Classes
@@ -285,15 +299,18 @@ newmenu = cake.ui.createMenu("example.json", "Example menu", "")
 ui.createButton(newmenu, "Example button", exampleFunction, ["value1", "value2"])
 ```
 
-# How to create JSON sprites and menu styles
+# How to create JSON sprites and layouts
 
 Well, this one might be a bit tricky, because from my last updates, a structure of such a JSON file has been changed. So, let's go right into it!
 
-Structure of a menu style JSON file is presented in "menu1.json"
+Structure of a menu style JSON file is presented in "layout1.json"
 
 And structure of a JSON sprite is presented in "sprite1.json"
+
 Now, this structure has a simple feature - type. There are two types - "file" and "text".
+
 "file" type is for *.txt* files and other text documents.
+
 "text" type is for lists and strings, like this: `["Multi", "lined", "sprite"]` or: `"Single lined text"`.
 
 # Summary
