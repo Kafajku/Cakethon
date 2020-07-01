@@ -307,6 +307,10 @@ newmenu = cake.ui.createMenu("example.json", "Example menu", "")
 ui.createButton(newmenu, "Example button", exampleFunction, ["value1", "value2"])
 ```
 
+## Elements (generally clickables) of layouts
+
+If you don't know how to actually click a button, here's the answer - first of all, you want to hoover over the button with you mouse; then, you need to press *spacebar* on your keyboar - and that's all.
+
 # How to create JSON sprites and layouts
 
 Well, this one might be a bit tricky, because from my last updates, a structure of such a JSON file has been changed. So, let's go right into it!
