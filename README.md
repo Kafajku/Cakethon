@@ -19,7 +19,7 @@ List of topics touched by me here (on the bottom):
 
 2. Downloading the module
 
-3. Helping me in NativePython improvements
+3. Helping me in Cakethon improvements
 
 4. A guide to using module
 
@@ -37,7 +37,7 @@ This project is officially licensed under JFPU License 1.0. To see more info, re
 
 After you, hopefully, understand how this project works, we can move on this thing and finally - download Cakethon. So, go ahead and do it!
 
-# Helping me in NativePython improvements
+# Helping me in Cakethon improvements
 
 Also, as a part of Cakethon community, you can give me your own suggestions to improve official version of Cakethon.
 
@@ -267,7 +267,7 @@ All functions:
 
 ## Classes
 
-Actually, there are some things I've gotta tell about classes and functions inside NativePython module. For first, let's tell, that classes like `createTimer` (classes with `create` keyword) are used to make instances, unlike classes such as `caption`, also, in case of class `caption`, it has it's own, default instance, others, are just classes to normal use.
+Actually, there are some things I've gotta tell about classes and functions inside Cakethon module. For first, let's tell, that classes like `createTimer` (classes with `create` keyword) are used to make instances, unlike classes such as `caption`, also, in case of class `caption`, it has it's own, default instance, others, are just classes to normal use.
 
 Also, after the update **1.91**, I should tell something, if you are using `layout` class. Since it is using mouse position, you got to make it somehow even more relative, to the Python window, so I deleted the `resize()` function and replaced it with `move()` function (`thisWindow` class, I recommend reading **changelog** also), which will let you to move any window and resize it at once. Within it, you don't want to change your Python window's title, otherwise, `move()` function will be probably useless. You want to always move the Python window to position `0, 0`, `width` and `height` can be set as you want, and the `title` must be the Python window's title.
 
