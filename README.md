@@ -3,6 +3,8 @@
 ###### cake.py 1.28 - added `customFile` class;
 ###### cake.py 1.30 - added `exports` class;
 ###### cake.py 1.85 - deleted whole `ui` class;
+###### cake.py 1.86 - deleted function `resize()` from `thisWindow` class;
+###### cake.py 1.87 - added function `move()` to `thisWindow` class;
 ###### cake.py 1.91 - added `layout` class and supported `.json` files;
 
 # Introduction
@@ -93,7 +95,7 @@ Class name: `thisWindow`
 
 Functions of this class:
 
-] `resize(W, H)` - resizes your window.
+] `move(title, X, Y, W, H)` - moves, and resizes, any window (depending on the title).
 
 ] `compactSize()` - sets your window's size to compact, making it scorllable.
 
@@ -257,11 +259,17 @@ All functions:
 
 ] ] `setOnClick(method)` - changes the whole function, which will be called after the button's pressed (use always, even, if you are making layout via `.json` file).
 
+] `inspectHitboxes()` - returns current mouse position; however, this mouse pos is devided by some numbers, so it's kinda relative to the Python window.
+
+] `refresh()` - put in `while` loop
+
 # Some comments about classes and functions
 
 ## Classes
 
 Actually, there are some things I've gotta tell about classes and functions inside NativePython module. For first, let's tell, that classes like `createTimer` (classes with `create` keyword) are used to make instances, unlike classes such as `caption`, also, in case of class `caption`, it has it's own, default instance, others, are just classes to normal use.
+
+Also, after the update **1.91**, I should tell something, if you are using `layout` class. Since it is using mouse position, you got to make it somehow even more relative, to the Python window, so I deleted the `resize()` function and replaced it with `move()` function (`thisWindow` class, I recommend reading **changelog** also), which will let you to move any window and resize it at once. Within it, you don't want to change your Python window's title, otherwise, `move()` function will be probably useless. You want to always move the Python window to position `0, 0`, `width` and `height` can be set as you want, and the `title` must be the Python window's title.
 
 ## Functions
 
