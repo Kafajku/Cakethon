@@ -1,0 +1,25 @@
+{
+	"manifest": "layout",
+	"body": {
+		"@text.textview1": {
+			"x": 4,
+			"y": 5,
+			"text": "The app",
+			"color": White
+		},
+
+		"@clickable.button1": {
+			"x": 6,
+			"y": 6,
+			"text": "Error dialog",
+			"color": Red
+		},
+
+		"@clickable.button2": {
+			"x": 6,
+			"y": 7,
+			"text": "Info dialog",
+			"color": Blue
+		}
+	}
+}
