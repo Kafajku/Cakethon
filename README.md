@@ -303,7 +303,7 @@ ui.createButton(newmenu, "Example button", exampleFunction, ["value1", "value2"]
 
 Well, this one might be a bit tricky, because from my last updates, a structure of such a JSON file has been changed. So, let's go right into it!
 
-Structure of a menu style JSON file is presented in "layout1.json"
+Structure of a layout JSON file is presented in "layout1.json"
 
 And structure of a JSON sprite is presented in "sprite1.json"
 
