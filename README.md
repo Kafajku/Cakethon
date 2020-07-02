@@ -371,7 +371,7 @@ Press **`E`** to edit the `memo`.
 
 Press **`enter`** to end editing the memo.
 
-Press **click** key to click.
+Press **click** key to select current `text` of `memo`.
 
 # How to create JSON sprites and layouts
 
