@@ -27,9 +27,9 @@ List of topics touched by me here (on the bottom):
 
 4. A guide to using module
 
-5. Some comments about classes and functions
+5. Some comments about stuff
 
-6. How to create JSON sprites and menu styles
+6. How to create JSON sprites and layouts
 
 7. Summary
 
@@ -273,13 +273,23 @@ All functions:
 
 ] ] `setColor(self, color)` - tells the element to use other color.
 
-] ] `setOnClick(self, method)` - sets `onClick` definition for the `lister` element.
+] ] `setOnClick(self, method)` - sets `onClick` definition for the `lister` element (use always, even, if you are making layout via `.json` file).
 
-] ] `setList(self, list, defaultPos = 0)` - makes the `lister` element use given list.
+] ] `setList(self, list, defaultPos = 0)` - makes the `lister` element use given list (use always, even, if you are making layout via `.json` file).
 
-] ] `setDict(self, dict, defaultKey)` - tells `lister` element to use given dict.
+] ] `setDict(self, dict, defaultKey)` - tells `lister` element to use given dict (use always, even, if you are making layout via `.json` file).
 
-] `inspectHitboxes()` - returns current mouse position; however, this mouse pos is devided by some numbers, so it's kinda relative to the Python window.
+] `memo(self, text, x, y, color)` (class) - creates a new, memo type element; use only if you make layout directly in your Python file.
+
+] ] `setX(self, x)` - sets the x position of `memo` element.
+
+] ] `setY(self, Y)` - sets position on y axis of element.
+
+] ] `setColor(self, color)` - changes color of `memo`.
+
+] ] `setOnClick(self, method)` - makes the `onClick` method of `memo` element change.
+
+] `inspectHitboxes()` - returns current mouse position; however, this mouse pos is devided by some numbers, so it's kinda relative to the Python window. Note, that even if this function returns kinda-relative mouse pos to the Python Window, you have to use function `move()` from `thisWindow` class. More in **Some comments about stuff**.
 
 ] `refresh()` - put in `while` loop
 
@@ -291,7 +301,7 @@ All functions:
 
 ] `error(title, message)` - creates simple dialog box, which is including ***OK*** button and, of course, ***Error*** icon.
 
-# Some comments about classes and functions
+# Some comments about stuff
 
 ## Classes
 
