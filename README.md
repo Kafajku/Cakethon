@@ -349,9 +349,29 @@ ui.createButton(newmenu, "Example button", exampleFunction, ["value1", "value2"]
 
 In layouts we have some elements that we can click and do other stuff with them. Since I've made all of this, I wanted to let you know *here* how to click on particular elements, choose item from `listers` or edit `memos`.
 
+###### General
+
+Press **`spacebar`** to click on item (`text` element not supported).
+
+###### Clickables
+
+*Like, well, there's nothing special about it; just press the **click** key.*
+
 ###### Listers
 
-Press **`A`**
+Press **`A`** to select previous item from `lister`.
+
+Press **`D`** to select next item in `lister`.
+
+Press **click** key to click.
+
+###### Memos
+
+Press **`E`** to edit the `memo`.
+
+Press **`enter`** to end editing the memo.
+
+Press **click** key to click.
 
 # How to create JSON sprites and layouts
 
