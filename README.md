@@ -287,7 +287,7 @@ All functions:
 
 ] ] `setColor(self, color)` - changes color of `memo`.
 
-] ] `setOnClick(self, method)` - makes the `onClick` method of `memo` element change.
+] ] `setOnClick(self, method)` - makes the `onClick` method of `memo` element change; use always, even, if you are making layout via `.json` file.
 
 ] `inspectHitboxes()` - returns current mouse position; however, this mouse pos is devided by some numbers, so it's kinda relative to the Python window. Note, that even if this function returns kinda-relative mouse pos to the Python Window, you have to use function `move()` from `thisWindow` class. More in **Some comments about stuff**.
 
