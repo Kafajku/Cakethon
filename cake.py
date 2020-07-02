@@ -695,6 +695,8 @@ class layout:
 
 
     def imp(path):
+        layout.clearItems()
+        
         path = customFile.__checkForShorts__(path)
 
         array = jsonFile.imp(path)
