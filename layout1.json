@@ -4,21 +4,21 @@
 		"@text.textview1": {
 			"x": 4,
 			"y": 5,
-			"text": "The app",
+			"text": "Example text element",
 			"color": White
 		},
 
 		"@clickable.button1": {
 			"x": 6,
 			"y": 6,
-			"text": "Error dialog",
+			"text": "Example clickable element",
 			"color": Red
 		},
 
-		"@clickable.button2": {
+		"@lister.listview1": {
 			"x": 6,
 			"y": 7,
-			"text": "Info dialog",
+			"text": "Example lister element",
 			"color": Blue
 		}
 	}
