@@ -511,8 +511,17 @@ class exports:
 class layout:
     items = []
 
+
     def addItem(item):
         layout.items.append(item)
+
+
+    def removeItem(item):
+        layout.items.remove(item)
+
+
+    def clearItems():
+        layout.items = []
 
 
     class text:
@@ -547,7 +556,7 @@ class layout:
             self.x = x
             self.y = y
             self.text = text
-            self.color = Underline + color
+            self.color = color
             self.endX = (x + int(len(text) / 2)) + 1
             layout.addItem(self)
 
@@ -572,6 +581,58 @@ class layout:
             self.color = color
 
 
+    class lister:
+        def __init__(self, x, y, text, color):
+            self.type = "lister"
+            self.x = x
+            self.y = y
+            self.text = text
+            self.color = color
+            self.endX = (x + int(len(text) / 2)) + 1
+            layout.addItem(self)
+
+
+        def setX(self, x):
+            self.x = x
+
+
+        def setY(self, y):
+            self.y = y
+
+
+        def setText(self, text):
+            self.text = text
+
+
+        def setList(self, llist, defaultPos = 0):
+            self.dict = None
+            self.list = llist
+            self.defpos = defaultPos
+
+
+        def setDict(self, ddict, defaultKey):
+            self.list = None
+            self.dict = ddict
+
+            def getDictKeys(theDict):
+                theList = []
+                for key in theDict.keys():
+                    theList.append(key)
+                return theList
+
+            self.helpList = getDictKeys(self.dict)
+            self.defkey = defaultKey
+            self.defhelppos = self.helpList.index(self.defkey)
+
+
+        def setOnClick(self, method):
+            self.onClick = method
+
+
+        def setColor(self, color):
+            self.color = color
+
+
     def inspectHitboxes():
         x, y = mouse.getCoords()
         x, y = int(x / 18), int(y / 24)
@@ -580,7 +641,14 @@ class layout:
 
     def refresh():
         for item in layout.items:
-            caption.create(item.color + item.text + Def, item.x, item.y)
+            if item.type == "text" or item.type == "clickable":
+                caption.create(item.color + item.text + Def, item.x, item.y)
+            else:
+                if not item.list is None:
+                    caption.create(item.color + item.text + "     <" + item.list[item.defpos] + ">" + Def, item.x, item.y)
+                else:
+                    caption.create(item.color + item.text + "     <" + item.dict[item.defkey] + ">" + Def, item.x, item.y)
+
             if item.type == "clickable":
                 var = item.endX - item.x
                 for xPos in range(var):
@@ -588,6 +656,42 @@ class layout:
                     if x == item.x + xPos and y == item.y:
                         if key.listenFor("space"):
                             item.onClick()
+                            thisWindow.sleep(125)
+
+            if item.type == "lister":
+                var = item.endX - item.x
+                for xPos in range(var):
+                    x, y = layout.inspectHitboxes()
+                    if x == item.x + xPos and y == item.y:
+                        if key.listenFor("space"):
+                            if not item.list is None:
+                                item.onClick(item.list, item.defpos)
+                                thisWindow.sleep(125)
+                            else:
+                                item.onClick(item.dict, item.defkey)
+                                thisWindow.sleep(125)
+
+                        if key.listenFor("d"):
+                            if not item.list is None:
+                                if item.defpos < len(item.list) - 1:
+                                    item.defpos += 1
+                                    thisWindow.sleep(125)
+                            else:
+                                if item.defhelppos < len(item.helpList) - 1:
+                                    item.defhelppos += 1
+                                    item.defkey = item.helpList[item.defhelppos]
+                                    thisWindow.sleep(125)
+
+                        if key.listenFor("a"):
+                            if not item.list is None:
+                                if item.defpos > 0:
+                                    item.defpos -= 1
+                                    thisWindow.sleep(125)
+                            else:
+                                if item.defhelppos > 0:
+                                    item.defhelppos -= 1
+                                    item.defkey = item.helpList[item.defhelppos]
+                                    thisWindow.sleep(125)
 
 
     def imp(path):
