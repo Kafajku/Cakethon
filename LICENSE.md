@@ -8,7 +8,7 @@ The list of *example* things that user cannot do with program licensed under jfp
 - User cannot distribute program.
 - User cannot share modified program's source code.
 - User cannot make profit of program (directly).
-- User cannot call himself as "another author" of program.
+- User cannot claim rights for the program.
 
 ###### Copyright © Cakethon since 2020 by Kafajku - All rights reserved.
 ###### Copyright © JFPU License 1.1 since 2020 by Kafajku- All rights reserved.
