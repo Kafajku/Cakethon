@@ -345,9 +345,13 @@ newmenu = cake.ui.createMenu("example.json", "Example menu", "")
 ui.createButton(newmenu, "Example button", exampleFunction, ["value1", "value2"])
 ```
 
-## Elements (generally clickables) of layouts
+## Some elements of layouts
 
-If you don't know how to actually click a button, here's the answer - first of all, you want to hoover over the button with you mouse; then, you need to press *spacebar* on your keyboar - and that's all.
+In layouts we have some elements that we can click and do other stuff with them. Since I've made all of this, I wanted to let you know *here* how to click on particular elements, choose item from `listers` or edit `memos`.
+
+###### Listers
+
+Press **`A`**
 
 # How to create JSON sprites and layouts
 
