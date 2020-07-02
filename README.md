@@ -286,7 +286,9 @@ All functions:
 ###### Dialog boxes
 
 `dialog` (class)
+
 ] `info(title, message)` - generates a dialog box with ***OK*** button and ***Information*** icon.
+
 ] `error(title, message)` - creates simple dialog box, which is including ***OK*** button and, of course, ***Error*** icon.
 
 # Some comments about classes and functions
