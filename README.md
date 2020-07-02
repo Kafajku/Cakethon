@@ -363,7 +363,7 @@ Press **`A`** to select previous item from `lister`.
 
 Press **`D`** to select next item in `lister`.
 
-Press **click** key to click.
+Press **click** key to select current item (in funtion, it returns the `list` of `lister` and `position` of `lister`'s `list`).
 
 ###### Memos
 
