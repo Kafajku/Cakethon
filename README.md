@@ -1,4 +1,4 @@
-    Cakethon 1.91
+    Cakethon 2.01
 ## Changelog
 ###### cake.py 1.28 - added `customFile` class;
 ###### cake.py 1.30 - added `exports` class;
@@ -6,6 +6,9 @@
 ###### cake.py 1.86 - deleted function `resize()` from `thisWindow` class;
 ###### cake.py 1.87 - added function `move()` to `thisWindow` class;
 ###### cake.py 1.91 - added `layout` class and supported `.json` files;
+###### cake.py 1.97 - added function `removeItem()` to class `layout`;
+###### cake.py 1.98 - added function `clearItems()`, also, to class `layout`;
+###### cake.py 2.01 - added support for element `lister` (`layout` class);
 
 # Introduction
 
@@ -260,6 +263,10 @@ All functions:
 ] ] `setColor(self, color)` - tells the element to use other color.
 
 ] ] `setOnClick(method)` - changes the whole function, which will be called after the button's pressed (use always, even, if you are making layout via `.json` file).
+
+] `lister(self, x, y, text, color)` (class) - makes a new element, which is a `list` and `dict` selector; use only if you make layout directly in your Python file.
+
+] ] `setOnClick(self, method)` - sets `onClick` definition for the `lister` element.
 
 ] `inspectHitboxes()` - returns current mouse position; however, this mouse pos is devided by some numbers, so it's kinda relative to the Python window.
 
