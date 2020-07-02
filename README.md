@@ -30,9 +30,7 @@ List of topics touched by me here (on the bottom):
 
 6. How to create JSON sprites and menu styles
 
-7. Example of last feature
-
-8. Summary
+7. Summary
 
 # License
 
@@ -266,7 +264,19 @@ All functions:
 
 ] `lister(self, x, y, text, color)` (class) - makes a new element, which is a `list` and `dict` selector; use only if you make layout directly in your Python file.
 
+] ] `setX(self, x)` - sets position on X axis.
+
+] ] `setY(self, y)` - changes position on Y axis.
+
+] ] `setText(self, text)` - makes the text of element change.
+
+] ] `setColor(self, color)` - tells the element to use other color.
+
 ] ] `setOnClick(self, method)` - sets `onClick` definition for the `lister` element.
+
+] ] `setList(self, list, defaultPos = 0)` - makes the `lister` element use given list.
+
+] ] `setDict(self, dict, defaultKey)` - tells `lister` element to use given dict.
 
 ] `inspectHitboxes()` - returns current mouse position; however, this mouse pos is devided by some numbers, so it's kinda relative to the Python window.
 
@@ -333,65 +343,6 @@ Now, this structure has a simple feature - type. There are two types - "file" an
 "file" type is for *.txt* files and other text documents.
 
 "text" type is for lists and strings, like this: `["Multi", "lined", "sprite"]` or: `"Single lined text"`.
-
-# Example of last feature
-
-## Layouts
-
-###### `.json` file (`global.json`)
-
-```
-{
-	"manifest": "layout",
-	"body": {
-		"@text.textview": {
-			"x": 4,
-			"y": 5,
-			"text": "Some label",
-			"color": White
-		},
-
-		"@clickable.button": {
-			"x": 6,
-			"y": 6,
-			"text": "Some button",
-			"color": Red
-		}
-	}
-}
-```
-
-###### `main.py` file
-
-```
-import sys
-sys.path.append('../')
-
-import libs.cake as cake #Here, I've put cake.py file inside my libs folder by the way, thats why I had to use sys lib
-
-cake.thisWindow.move("C:\\WINDOWS\\py.exe", 0, 0, 1024, 1024)
-
-def onClickMethod():
-	print("Button has been clicked!")
-
-cake.layout.imp("layouts/global.json")
-cake.button.setOnClick(onClickMethod)
-
-while True:
-	cake.thisWindow.cls()
-	cake.layout.refresh()
-```
-
-###### Results (when the button has been clicked, of course)
-
-```
-Button has been clicked!
-
-
-
-                    Some label
-                        Some button
-```
 
 # Summary
 
