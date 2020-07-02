@@ -1,4 +1,4 @@
-    Cakethon 2.01
+    Cakethon 2.02
 ## Changelog
 ###### cake.py 1.28 - added `customFile` class;
 ###### cake.py 1.30 - added `exports` class;
@@ -9,6 +9,7 @@
 ###### cake.py 1.97 - added function `removeItem()` to class `layout`;
 ###### cake.py 1.98 - added function `clearItems()`, also, to class `layout`;
 ###### cake.py 2.01 - added support for element `lister` (`layout` class);
+###### cake.py 2.02 - added `dialog` class;
 
 # Introduction
 
@@ -281,6 +282,12 @@ All functions:
 ] `inspectHitboxes()` - returns current mouse position; however, this mouse pos is devided by some numbers, so it's kinda relative to the Python window.
 
 ] `refresh()` - put in `while` loop
+
+###### Dialog boxes
+
+`dialog` (class)
+] `info(title, message)` - generates a dialog box with ***OK*** button and ***Information*** icon.
+] `error(title, message)` - creates simple dialog box, which is including ***OK*** button and, of course, ***Error*** icon.
 
 # Some comments about classes and functions
 
