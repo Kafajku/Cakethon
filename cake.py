@@ -13,6 +13,7 @@ import os
 # pip install keyboard
 # pip install python-varname
 # pip install requests
+#And restart your Python code editor.
 import sys
 import datetime
 import win32gui
@@ -633,6 +634,34 @@ class layout:
             self.color = color
 
 
+    class memo:
+        def __init__(self, x, y, text, color):
+            self.type = "memo"
+            self.focus = False
+            self.x = x
+            self.y = y
+            self.color = color
+            self.text = text
+            self.endX = (x + int(len(text) / 2)) + 1
+            layout.addItem(self)
+
+
+        def setX(self, x):
+            self.x = x
+
+
+        def setY(self, y):
+            self.y = y
+
+
+        def setColor(self, color):
+            self.color = color
+
+
+        def setOnClick(self, method):
+            self.onClick = method
+
+
     def inspectHitboxes():
         x, y = mouse.getCoords()
         x, y = int(x / 18), int(y / 24)
@@ -643,11 +672,17 @@ class layout:
         for item in layout.items:
             if item.type == "text" or item.type == "clickable":
                 caption.create(item.color + item.text + Def, item.x, item.y)
-            else:
+            elif item.type == "lister":
                 if not item.list is None:
                     caption.create(item.color + item.text + "     <" + item.list[item.defpos] + ">" + Def, item.x, item.y)
                 else:
                     caption.create(item.color + item.text + "     <" + item.dict[item.defkey] + ">" + Def, item.x, item.y)
+            else:
+                if not item.focus:
+                    caption.create(item.color + item.text + Def, item.x, item.y)
+                else:
+                    item.text = caption.get(item.color + "" + Def, item.x, item.y)
+                    item.focus = False
 
             if item.type == "clickable":
                 var = item.endX - item.x
@@ -693,10 +728,21 @@ class layout:
                                     item.defkey = item.helpList[item.defhelppos]
                                     thisWindow.sleep(125)
 
+            if item.type == "memo":
+                var = item.endX - item.x
+                for xPos in range(var):
+                    x, y = layout.inspectHitboxes()
+                    if x == item.x + xPos and y == item.y:
+                        if key.listenFor("e") and not item.focus:
+                            item.focus = True
+
+                        if key.listenFor("space"):
+                            item.onClick(item.text)
+
 
     def imp(path):
         layout.clearItems()
-        
+
         path = customFile.__checkForShorts__(path)
 
         array = jsonFile.imp(path)
@@ -713,22 +759,19 @@ class layout:
             __y = __body[item]["y"]
             __text = __body[item]["text"]
             __color = __body[item]["color"]
+            __text = __body[item]["text"]
 
             globals()[name] = eval("layout." + typeof)(__x, __y, __text, __color)
 
 
+##
+## Dialog boxes
+##
+
 class dialog:
     def error(title, message):
-        text = "x = msgbox(\"" + message + "\",0+16,\"" + title + "\")"
-        file = open("msgbox.vbs", "w")
-        file.write(text)
-        file.close()
-        os.system("start msgbox.vbs")
+        ctypes.windll.user32.MessageBoxW(0, message, title, 16)
 
 
     def info(title, message):
-        text = "x = msgbox(\"" + message + "\",0+64,\"" + title + "\")"
-        file = open("msgbox.vbs", "w")
-        file.write(text)
-        file.close()
-        os.system("start msgbox.vbs")
+        ctypes.windll.user32.MessageBoxW(0, message, title, 64)
