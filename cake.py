@@ -590,6 +590,8 @@ class layout:
             self.text = text
             self.color = color
             self.endX = (x + int(len(text) / 2)) + 1
+            self.leftArrow = -1
+            self.rightArrow = -1
             layout.addItem(self)
 
 
@@ -668,6 +670,12 @@ class layout:
         return x, y
 
 
+    def inspectArrowsPositions(lister):
+        x = lister.leftArrow
+        x2 = lister.rightArrow
+        return x, x2
+
+
     def refresh():
         for item in layout.items:
             if item.type == "text" or item.type == "clickable":
@@ -675,13 +683,20 @@ class layout:
             elif item.type == "lister":
                 if not item.list is None:
                     caption.create(item.color + item.text + "     <" + item.list[item.defpos] + ">" + Def, item.x, item.y)
+
+                    item.leftArrow = int((item.x + len(item.text + "     ") + (item.text + "     <" + item.list[item.defpos] + ">").find("<")) / 4) + 5
+                    item.rightArrow = int((item.x + len(item.text + "     <" + item.list[defpos]) + (item.text + "     <" + item.list[item.defpos] + ">").rfind(">")) / 4) + 5
                 else:
                     caption.create(item.color + item.text + "     <" + item.dict[item.defkey] + ">" + Def, item.x, item.y)
+
+                    item.leftArrow = int((item.x + len(item.text + "     ") + (item.text + "     <" + item.dict[item.defkey] + ">").find("<")) / 4) + 5
+                    item.rightArrow = int((item.x + len(item.text + "     <" + item.dict[item.defkey]) + (item.text + "     <" + item.dict[item.defkey] + ">").rfind(">")) / 4) + 5
             else:
                 if not item.focus:
                     caption.create(item.color + item.text + Def, item.x, item.y)
                 else:
-                    item.text = caption.get(item.color + "" + Def, item.x, item.y)
+                    item.text = caption.get("", item.x, item.y)
+                    item.endX = (item.x + int(len(item.text) / 2)) + 1
                     item.focus = False
 
             if item.type == "clickable":
@@ -689,16 +704,17 @@ class layout:
                 for xPos in range(var):
                     x, y = layout.inspectHitboxes()
                     if x == item.x + xPos and y == item.y:
-                        if key.listenFor("space"):
+                        if key.listenFor("ctrl"):
                             item.onClick()
                             thisWindow.sleep(125)
 
             if item.type == "lister":
                 var = item.endX - item.x
+                x, y = layout.inspectHitboxes()
                 for xPos in range(var):
                     x, y = layout.inspectHitboxes()
                     if x == item.x + xPos and y == item.y:
-                        if key.listenFor("space"):
+                        if key.listenFor("ctrl"):
                             if not item.list is None:
                                 item.onClick(item.list, item.defpos)
                                 thisWindow.sleep(125)
@@ -706,37 +722,37 @@ class layout:
                                 item.onClick(item.dict, item.defkey)
                                 thisWindow.sleep(125)
 
-                        if key.listenFor("d"):
-                            if not item.list is None:
-                                if item.defpos < len(item.list) - 1:
-                                    item.defpos += 1
-                                    thisWindow.sleep(125)
-                            else:
-                                if item.defhelppos < len(item.helpList) - 1:
-                                    item.defhelppos += 1
-                                    item.defkey = item.helpList[item.defhelppos]
-                                    thisWindow.sleep(125)
+                if x == item.leftArrow and key.listenFor("ctrl"):
+                    if not item.list is None:
+                        if item.defpos > 0:
+                            item.defpos -= 1
+                            thisWindow.sleep(125)
+                    else:
+                        if item.defhelppos > 0:
+                            item.defhelppos -= 1
+                            item.defkey = item.helpList[item.defhelppos]
+                            thisWindow.sleep(125)
 
-                        if key.listenFor("a"):
-                            if not item.list is None:
-                                if item.defpos > 0:
-                                    item.defpos -= 1
-                                    thisWindow.sleep(125)
-                            else:
-                                if item.defhelppos > 0:
-                                    item.defhelppos -= 1
-                                    item.defkey = item.helpList[item.defhelppos]
-                                    thisWindow.sleep(125)
+                if x == item.rightArrow and key.listenFor("ctrl"):
+                    if not item.list is None:
+                        if item.defpos < len(item.list) - 1:
+                            item.defpos += 1
+                            thisWindow.sleep(125)
+                    else:
+                        if item.defhelppos < len(item.helpList) - 1:
+                            item.defhelppos += 1
+                            item.defkey = item.helpList[item.defhelppos]
+                            thisWindow.sleep(125)
 
             if item.type == "memo":
                 var = item.endX - item.x
                 for xPos in range(var):
                     x, y = layout.inspectHitboxes()
                     if x == item.x + xPos and y == item.y:
-                        if key.listenFor("e") and not item.focus:
+                        if key.listenFor("shift") and not item.focus:
                             item.focus = True
 
-                        if key.listenFor("space"):
+                        if key.listenFor("ctrl"):
                             item.onClick(item.text)
 
 
