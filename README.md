@@ -351,7 +351,7 @@ In layouts we have some elements that we can click and do other stuff with them.
 
 ###### General
 
-Press **`spacebar`** to click on item (`text` element not supported).
+Press **`ctrl`** to click on item (`text` element not supported).
 
 ###### Clickables
 
@@ -359,15 +359,13 @@ Press **`spacebar`** to click on item (`text` element not supported).
 
 ###### Listers
 
-Press **`A`** to select previous item from `lister`.
+Hover arrows and click **click** key to select previous or next item.
 
-Press **`D`** to select next item in `lister`.
-
-Press **click** key to select current item (in funtion, it returns the `list` of `lister` and `position` of `lister`'s `list`).
+Press **click** key to select current item (in funtion, it returns the `list` of `lister` and `position` of `lister`'s `list`, or, it returns `lister`'s `dict` and `lister` `dict`'s `key`).
 
 ###### Memos
 
-Press **`E`** to edit the `memo`.
+Press **`shift`** to edit the `memo`.
 
 Press **`enter`** to end editing the memo.
 
