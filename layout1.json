@@ -18,14 +18,14 @@
 		"@lister.listview1": {
 			"x": 6,
 			"y": 7,
-			"text": "You can pess \"A\" and \"D\" to choose item from my list!",
+			"text": "Hover the arrows and click on them to select my items!",
 			"color": Cyan
 		},
 
 		"@memo.edittext1": {
 			"x": 6,
 			"y": 8,
-			"text": "This is a hint: press \"E\" to edit me...",
+			"text": "This is a hint: press \'Shift\' to edit me...",
 			"color": White
 		}
 	}
